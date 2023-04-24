@@ -1,0 +1,13 @@
+Big data is everywhere. Period. In the process of running a successful business in today’s day and age, you’re likely going to run into it whether you like it or not.
+
+Whether you’re a businessman trying to catch up to the times or a coding prodigy looking for their next project, this tutorial will give you a brief overview of what big data is. You will learn how it’s applicable to you, and how you can get started quickly through the Twitter API and Python.
+
+Python snake reading Twitter
+What Is Big Data?
+Big data is exactly what it sounds like—a lot of data. Alone, a single point of data can’t give you much insight. But terabytes of data, combined together with complex mathematical models and boisterous computing power, can create insights human beings aren’t capable of producing. The value that big data Analytics provides to a business is intangible and surpassing human capabilities each and every day.
+
+The first step to big data analytics is gathering the data itself. This is known as “data mining.” Data can come from anywhere. Most businesses deal with gigabytes of user, product, and location data. In this tutorial, we’ll be exploring how we can use data mining techniques to gather Twitter data, which can be more useful than you might think.
+
+For example, let’s say you run Facebook, and want to use Messenger data to provide insights on how you can advertise to your audience better. Messenger has 1.2 billion monthly active users. In this case, the big data are conversations between users. If you were to individually read the conversations of each user, you would be able to get a good sense of what they like, and be able to recommend products to them accordingly. Using a machine learning technique known as Natural Language Processing (NLP), you can do this on a large scale with the entire process automated and left up to machines.
+
+This is just one of the countless example

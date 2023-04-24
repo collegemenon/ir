@@ -1,0 +1,33 @@
+from whoosh.index import create_in, open_dir
+from whoosh.fields import *
+from whoosh.qparser import QueryParser
+import os
+
+# Define the schema for the index
+schema = Schema(title=TEXT(stored=True), content=TEXT(stored=True))
+
+# Create the index
+if not os.path.exists("index"):
+    os.mkdir("index")
+index = create_in("index", schema)
+
+# Open the index for writing
+writer = index.writer()
+
+# Add some documents to the index
+writer.add_document(title=u"Document 1", content=u"This is the content of document 1")
+writer.add_document(title=u"Document 2", content=u"This is the content of document 2")
+writer.add_document(title=u"Document 3", content=u"This is the content of document 3")
+writer.commit()
+
+# Open the index for searching
+searcher = index.searcher()
+
+# Parse a query and search the index
+query = QueryParser("content", index.schema).parse("content")
+results = searcher.search(query)
+
+# Print the results
+print("Number of results:", len(results))
+for hit in results:
+    print(hit["title"])
