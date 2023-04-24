@@ -26,3 +26,8 @@ print("Document ids where either 'this' OR 'first' are present are:",alldata.ind
 print("3. Find all document ids for query NOT 'and' ")
 alldata=df[(df['and']!=1)]
 print("Document ids where 'and' term is not present are:",alldata.index.tolist())
+   
+   
+   
+   The Boolean model of information retrieval is a classical information retrieval (IR) model and is
+the first and most adopted one. It is used by virtually all commercial IR systems today
